@@ -1,157 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latte Cafe</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="scss/main.css">
+  <title>SUREN_it_is_end</title>
 </head>
+
 <body>
-    <div class="wrapper">
-        <div class="content">
-            <div class="header">
-                <div class="container">
-                    <div class="header__holder">
-                        <div class="menu__list">
-                            <ul class="list">
-                                <li>About</li>
-                                <li>Menu</li>
-                                <li>Info</li>
-                                <li>Booking</li>    
-                            </ul>
-                        </div>
-                        <div class="header__title">
-                            <h1>Latte Cafe</h1>
-                        </div>
-                        <div class="heder__soc">
-                            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M23.6 3.04016C23.6 1.76416 22.556 0.720161 21.28 0.720161H2.72002C1.44403 0.720161 0.400024 1.76416 0.400024 3.04016V16.9602C0.400024 18.2361 1.44403 19.2801 2.72002 19.2801H21.28C22.556 19.2801 23.6 18.2361 23.6 16.9602V3.04016ZM21.28 3.04016L12 8.84013L2.72002 3.04016H21.28ZM21.28 16.9602H2.72002V5.36016L12 11.1602L21.28 5.36016V16.9602Z" fill="#C67A88"/>
-                            </svg>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M23.1916 11.5957C23.1916 5.19161 18 0 11.5957 0C5.19161 0 0 5.19161 0 11.5957C0 17.3835 4.24039 22.1808 9.78394 23.0508V14.9477H6.8397V11.5957H9.78394V9.0411C9.78394 6.1349 11.5152 4.52961 14.1638 4.52961C15.4321 4.52961 16.7596 4.75609 16.7596 4.75609V7.60974H15.2974C13.8569 7.60974 13.4076 8.50365 13.4076 9.42158V11.5957H16.6236L16.1096 14.9477H13.4076V23.0508C18.9512 22.1808 23.1916 17.3835 23.1916 11.5957Z" fill="#C67A88"/>
-                                </svg>
-                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.5 2.0709C14.5727 2.0709 14.9365 2.08437 16.1449 2.13828C17.268 2.1877 17.8744 2.37637 18.2787 2.53359C18.8133 2.74023 19.1996 2.9918 19.5994 3.3916C20.0037 3.7959 20.2508 4.17773 20.4574 4.7123C20.6146 5.1166 20.8033 5.72754 20.8527 6.84609C20.9066 8.05898 20.9201 8.42285 20.9201 11.491C20.9201 14.5637 20.9066 14.9275 20.8527 16.1359C20.8033 17.259 20.6146 17.8654 20.4574 18.2697C20.2508 18.8043 19.9992 19.1906 19.5994 19.5904C19.1951 19.9947 18.8133 20.2418 18.2787 20.4484C17.8744 20.6057 17.2635 20.7943 16.1449 20.8437C14.932 20.8977 14.5682 20.9111 11.5 20.9111C8.42734 20.9111 8.06348 20.8977 6.85508 20.8437C5.73203 20.7943 5.12559 20.6057 4.72129 20.4484C4.18672 20.2418 3.80039 19.9902 3.40059 19.5904C2.99629 19.1861 2.74922 18.8043 2.54258 18.2697C2.38535 17.8654 2.19668 17.2545 2.14727 16.1359C2.09336 14.923 2.07988 14.5592 2.07988 11.491C2.07988 8.41836 2.09336 8.05449 2.14727 6.84609C2.19668 5.72305 2.38535 5.1166 2.54258 4.7123C2.74922 4.17773 3.00078 3.79141 3.40059 3.3916C3.80488 2.9873 4.18672 2.74023 4.72129 2.53359C5.12559 2.37637 5.73652 2.1877 6.85508 2.13828C8.06348 2.08437 8.42734 2.0709 11.5 2.0709ZM11.5 0C8.37793 0 7.98711 0.0134766 6.76074 0.0673828C5.53887 0.121289 4.69883 0.318945 3.97109 0.601953C3.21191 0.898437 2.56953 1.28926 1.93164 1.93164C1.28926 2.56953 0.898438 3.21191 0.601953 3.9666C0.318945 4.69883 0.121289 5.53437 0.0673828 6.75625C0.0134766 7.98711 0 8.37793 0 11.5C0 14.6221 0.0134766 15.0129 0.0673828 16.2393C0.121289 17.4611 0.318945 18.3012 0.601953 19.0289C0.898438 19.7881 1.28926 20.4305 1.93164 21.0684C2.56953 21.7062 3.21191 22.1016 3.9666 22.3936C4.69883 22.6766 5.53437 22.8742 6.75625 22.9281C7.98262 22.982 8.37344 22.9955 11.4955 22.9955C14.6176 22.9955 15.0084 22.982 16.2348 22.9281C17.4566 22.8742 18.2967 22.6766 19.0244 22.3936C19.7791 22.1016 20.4215 21.7062 21.0594 21.0684C21.6973 20.4305 22.0926 19.7881 22.3846 19.0334C22.6676 18.3012 22.8652 17.4656 22.9191 16.2438C22.973 15.0174 22.9865 14.6266 22.9865 11.5045C22.9865 8.38242 22.973 7.9916 22.9191 6.76523C22.8652 5.54336 22.6676 4.70332 22.3846 3.97559C22.1016 3.21191 21.7107 2.56953 21.0684 1.93164C20.4305 1.29375 19.7881 0.898437 19.0334 0.606445C18.3012 0.323437 17.4656 0.125781 16.2438 0.071875C15.0129 0.0134766 14.6221 0 11.5 0Z" fill="#C67A88"/>
-                                    <path d="M11.5 5.59277C8.23867 5.59277 5.59277 8.23867 5.59277 11.5C5.59277 14.7613 8.23867 17.4072 11.5 17.4072C14.7613 17.4072 17.4072 14.7613 17.4072 11.5C17.4072 8.23867 14.7613 5.59277 11.5 5.59277ZM11.5 15.3318C9.38418 15.3318 7.66816 13.6158 7.66816 11.5C7.66816 9.38418 9.38418 7.66816 11.5 7.66816C13.6158 7.66816 15.3318 9.38418 15.3318 11.5C15.3318 13.6158 13.6158 15.3318 11.5 15.3318Z" fill="#C67A88"/>
-                                    <path d="M19.0199 5.35909C19.0199 6.12276 18.4 6.73819 17.6408 6.73819C16.8771 6.73819 16.2617 6.11827 16.2617 5.35909C16.2617 4.59541 16.8816 3.97998 17.6408 3.97998C18.4 3.97998 19.0199 4.5999 19.0199 5.35909Z" fill="#C67A88"/>
-                                </svg>                                          
-                        </div>
-                    </div>
-                    <div class="pict">
-                        <img src="images/IMAGE.png" alt="interyer">
-                    </div>
-                </div>
+  <section class="header_section">
+    <header class="header">
+      <div class="header__main-logo">
+        <img src="../Hillel_final/img/Symbol.png" alt="303">
+      </div>
+      <div class="container">
+        <div class="header-inner">
+          <div class="header-inner__logo">
+            <img src="../Hillel_final/img/Logo.svg" alt="logo">
+          </div>
+
+          <div class="header-inner__navadress">
+            <div class="header-inner__navadress__adress">
+              <div class="header-inner__navadress__adress__languages">
+                <a href="https://lms.ithillel.ua/" class="header-inner__navadress__adress__languages__link">УК</a>
+                <a href="https://lms.ithillel.ua/" class="header-inner__navadress__adress__languages__link">РУ</a>
+                <a href="https://lms.ithillel.ua/" class="header-inner__navadress__adress__languages__link">EN</a>
+              </div>
+              <div class="header-inner__navadress__adress__city"><span>Kyiv, Mechnikova str, 14/1</span></div>
+              <div class="header-inner__navadress__adress__number"><span>0800 211 927</span></div>
+              <div class="header-inner__navadress__adress__facebook">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_70381_2977)">
+                    <path
+                      d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_70381_2977">
+                      <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
-            <div class="about">
-                <div class="container">
-                    <div class="abou__item">
-                        <div class="about__text">
-                            <h2>About As</h2>
-                            <p>Tucked away in the corner of Wellington, Latte Cafe is a local neighbourhood cafe and bar. Latte is all about doing what we love, in a city that we love. We keep stocked with local produce and pastries. Bring your family for a bite, or meet your friends for a coffee or warm drink.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="header-inner__navadress__nav">
+              <nav>
+                <a href="https://lms.ithillel.ua/" class="header-inner__navadress__nav__link">about us</a>
+                <a href="https://lms.ithillel.ua/" class="header-inner__navadress__nav__link">services</a>
+                <a href="https://lms.ithillel.ua/" class="header-inner__navadress__nav__link">team</a>
+                <a href="https://lms.ithillel.ua/" class="header-inner__navadress__nav__link">publications</a>
+                <a href="./pages/contact.html" target="_blank" class="header-inner__navadress__nav__link">contact</a>
+              </nav>
             </div>
-            <div class="menu">
-                <div class="container">
-                    <div class="menu__item">
-                        <div class="menu__info">
-                            <div class="info__text">
-                                <h2>Menu</h2>
-                                <p>We change our menu every season. Here is what we are currently dishing up.</p>
-                            </div>
-                            <div class="menu__btn">
-                                <button class="btn btn_1">Food Menu</button>
-                                <button class="btn btn_2">Drinks Menu</button>
-                                <button class="btn">Takeaway Menu</button>
-                            </div>
-                        </div>
-                        <div class="cafe__1">
-                            <img src="images/menu.png" alt="menu">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="info">
-                <div class="container">
-                    <div class="info__item">
-                        <div class="location">
-                            <h3>location</h3>
-                            <p>101 Cuba St,</p>
-                            <p>Te Aro, Wellington</p>
-                        </div>
-                        <div class="hours">
-                            <h3>Hours</h3>
-                            <p>Tuesday to Friday
-                                7AM - 3PM
-                            </p>
-                            <p>
-                                Saturday to Sunday
-                                8AM - 3PM
-                            </p>
-                        </div>
-                        <div class="day">
-                            <h3>Mondays?</h3>
-                            <p>We are closed on Mondays to reflect and refuel</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cafe">
-                <div class="container">
-                    <div class="cafe__item">
-                        <div class="cafe__menu">
-                            <img src="images/vine.png" alt="">
-                            <img src="images/salat.png" alt="">
-                        </div>
-                        <div class="cafe__inter">
-                            <img src="images/interyer.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="award">
-                <div class="container">
-                    <div class="award__item">
-                        <div class="award__title">
-                            <h2>Award winning cafe and bar.</h2>
-                        </div>
-                        <div class="award__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <footer class="foote">
-                <div class="container">
-                    <div class="footer__item">
-                        <ul class="footer__info">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Menu</li>
-                            <li>Info</li>
-                            <li>Contact</li>
-                            <li>Booking</li>
-                            <li>Privacy Policy</li>
-                        </ul>
-                        <ul class="footer__idea">
-                            <li>Style Guide</li>
-                            <li>Licenses</li>
-                            <li>Instructions</li>
-                            <li>Changelog</li>
-                            <li>Password</li>
-                            <li>404</li>
-                        </ul>
-                        <ul class="footer__privat">
-                            <li>© Latte Cafe 2022.</li>
-                            <li>Built by Nikolai Bain</li>
-                            <li>Powered by Webflow</li>
-                        </ul>
-                    </div>
-                </div>
-            </footer>
+          </div>
         </div>
+
+      </div>
+    </header>
+    <div class="container">
+      <div class="main-logo__h">
+        <h1>you legal solutions provider</h1>
+      </div>
+
+      <div class="main-logo__scroll">
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_22728_11340)">
+            <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2" />
+            <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
+          </g>
+          <defs>
+            <clipPath id="clip0_22728_11340">
+              <rect width="42" height="42" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="sub-header">
+        <div class="sub-header__types">
+          <div class="sub-header__types__name">Consistent</div>
+          <div class="sub-header__types__name">Customer oriented</div>
+          <div class="sub-header__types__name">Innovative</div>
+          <div class="sub-header__types__name">Business oriented</div>
+        </div>
+        <div class="sub-header__descr">
+          <article>
+            <h2>We turn the idea of legal services</h2>
+
+            <p>Consolidating many years of experience and practice, the company's lawyers accompany complex projects and
+              achieve a number of important decisions for the industry. Many of them form the practice of applying the
+              law
+              of the sea in Ukraine.</p>
+          </article>
+        </div>
+      </div>
+      <div class="data-service">
+        <a href="https://lms.ithillel.ua/" class="data-service__link">Services <i class="fa-solid fa-chevron-right"></i></a>
+
+        <p>What can we do better than others?</p>
+      </div>
+      <div class="data">
+        <div class="data-img">
+
+          <div class="data-img__iconDESCR">
+            <div class="data-img__icon">
+              <a href="#"><img src="../Hillel_final/img/Icon.svg" alt="404"></a>
+            </div>
+            <article>
+              <a>IT and e-commerce</a>
+
+              <p>An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts
+                you
+                from doing business. But there is not much work to do to hire an in-house lawyer.</p>
+            </article>
+          </div>
+          <div class="data-img__iconDESCR">
+            <div class="data-img__icon">
+              <a href="#"><img src="../Hillel_final/img/Icon1.svg" alt="404"></a>
+            </div>
+            <article>
+              <a>Comprehensive daily legal support</a>
+
+              <p>In addition, over time, the work will become the same type and uninteresting for a full-time lawyer.
+                And
+                we
+                know very well how difficult it is to find a good candidate with experience in the field of information
+                technology in Ukraine.</p>
+            </article>
+          </div>
+          <div class="data-img__iconDESCR">
+            <div class="data-img__icon">
+              <a href="#"><img src="../Hillel_final/img/Icon2.svg" alt="404"></a>
+            </div>
+            <article>
+              <a>Structuring corporate relationships</a>
+
+              <p>Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the
+                daily life of your company.</p>
+            </article>
+          </div>
+        </div>
+        <div class="data-img">
+          <div class="data-img__iconDESCR">
+            <div class="data-img__icon">
+              <a href="#"><img src="../Hillel_final/img/Icon3.svg" alt="404"></a>
+            </div>
+            <article>
+              <a>Building contractual relations</a>
+
+              <p>Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can
+                catch
+                it
+                at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
+            </article>
+          </div>
+          <div class="data-img__iconDESCR">
+            <div class="data-img__icon">
+              <a href="#"><img src="../Hillel_final/img/Icon4.svg" alt="404"></a>
+            </div>
+            <article>
+              <a>Protection of business, intellectual property</a>
+
+              <p>And all the other time he will work on new diverse projects, so he will definitely not stop in
+                professional
+                development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</p>
+            </article>
+          </div>
+          <div class="data-img__iconDESCR">
+            <div class="data-img__icon">
+              <a href="#"> <img src="../Hillel_final/img/Icon5.svg" alt="404"></a>
+            </div>
+            <article>
+              <a>Judicial representation</a>
+
+              <p>Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you
+                have your own legal department or not?</p>
+            </article>
+          </div>
+        </div>
+      </div>
     </div>
+
+  </section>
+  <section class="second_section">
+    <div class="container">
+      <div class="under-line">
+        <div class="under-line__first">
+
+        </div>
+
+        <div class="under-line__second">
+
+        </div>
+      </div>
+      <div class="man-descr">
+        <div class="man-descr__photo">
+          <img src="../Hillel_final/img/image.png" alt="404">
+        </div>
+        <div class="man-descr__descr">
+          <a>команда</a>
+          <article>
+            <p>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях,
+              коли більшість безсилі.</p>
+          </article>
+          <div class="man-descr__descr__name">
+            <span class="man-descr__descr__name__main">Олександр Олександровський</span>
+            <span class="man-descr__descr__name__occupation">Керуючий партнер</span>
+          </div>
+        </div>
+      </div>
+      <div class="sub-rounds">
+        <div class="sub-rounds__round"></div>
+        <div class="sub-rounds__round"></div>
+        <div class="sub-rounds__round"></div>
+      </div>
+    </div>
+  </section>
+  <section class="third_section">
+    <div class="container">
+      <div class="sub-link">
+        <a>They already trust us</a>
+      </div>
+      <div class="collection-wrapper">
+        <div class="collection-wrapper__item">
+          <img src="../Hillel_final/img/Item.png" alt="404">
+        </div>
+        <div class="collection-wrapper__item">
+          <img src="../Hillel_final/img/Item1.png" alt="404">
+        </div>
+        <div class="collection-wrapper__item">
+          <img src="../Hillel_final/img/Item2.png" alt="404">
+        </div>
+        <div class="collection-wrapper__item">
+          <img src="../Hillel_final/img/Item3.png" alt="404">
+        </div>
+        <div class="collection-wrapper__item">
+          <img src="../Hillel_final/img/Item4.png" alt="404">
+        </div>
+        <div class="collection-wrapper__item">
+          <img src="../Hillel_final/img/Item5.png" alt="404">
+        </div>
+        <div class="collection-wrapper__item">
+          <img src="../Hillel_final/img/Item6.png" alt="404">
+        </div>
+        <div class="collection-wrapper__item">
+          <img src="../Hillel_final/img/Item7.png" alt="404">
+        </div>
+        <div class="collection-wrapper__item">
+          <img src="../Hillel_final/img/Item8.png" alt="404">
+        </div>
+        <div class="collection-wrapper__item">
+          <img src="../Hillel_final/img/Item9.png" alt="404">
+        </div>
+        <div class="collection-wrapper__item">
+          <img src="../Hillel_final/img/Item10.png" alt="404">
+        </div>
+        <div class="collection-wrapper__item">
+          <img src="../Hillel_final/img/Item11.png" alt="404">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="above-footer">
+    <div class="container">
+      <div class="above-footer__link">
+        <a href="#">Publications <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+      <div class="above-footer__descr">
+        We have something to tell
+      </div>
+      <div class="above-footer__items">
+        <div class="above-footer__items__card above-footer__items__cardFIRST">
+          <div class="above-footer__items__card__image">
+            <img src="../Hillel_final/img/Cover.png" alt="404">
+          </div>
+          <div class="above-footer__items__card__info">
+            <div class="above-footer__items__card__link">Equity associate</div>
+            <div class="above-footer__items__card__miniTEXT">April 22</div>
+            <div class="above-footer__items__card__text">I'm a jun on projects. I am a co-owner of a law firm. How it
+              happened. Before entering my parents told me that if I…</div>
+          </div>
+        </div>
+        <div class="above-footer__items__card above-footer__items__cardSECOND">
+          <div class="above-footer__items__card__image">
+            <img src="../Hillel_final/img/Cover1.png" alt="404">
+          </div>
+          <div class="above-footer__items__card__info">
+            <div class="above-footer__items__card__link">Penalty for the Good Corporation: what will happen to Google
+              and
+              others for violating the GDPR</div>
+            <div class="above-footer__items__card__miniTEXT">September 29</div>
+            <div class="above-footer__items__card__text">
+              <article> why the recovery of 50 million euros could be a fateful
+                precedent According to Mind.ua January 21 National Commission for Data Protection.</article>
+            </div>
+          </div>
+        </div>
+        <div class="above-footer__items__card above-footer__items__cardTHIRD">
+          <div class="above-footer__items__card__image">
+            <img src="../Hillel_final/img/Cover2.png" alt="404">
+          </div>
+          <div class="above-footer__items__card__info">
+            <div class="above-footer__items__card__link">Millennial Testament</div>
+            <div class="above-footer__items__card__miniTEXT">August 19</div>
+            <div class="above-footer__items__card__text">
+              <article>
+                <p>What and how modern vloggers, opinion leaders and
+                  crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an
+                  apartment in…</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer-section">
+    <footer>
+      <div class="container">
+        <div class="footer-section__adress-logo">
+          <div class="footer-section__adress-logo__adress">
+            <span>Kyiv, Mechnikova str, 14/1</span>
+            <a class="footer-section__adress-logo__adress__link">On map</a>
+          </div>
+          <div class="footer-section__adress-logo__logo">
+            <div class="footer-section__adress-logo__logo__facebook">
+              <img src="../Hillel_final/img/Vector.svg" alt="facebook">
+            </div>
+            <span class="footer-section__adress-logo__logo__number">0800 211 927</span>
+            <a class="footer-section__adress-logo__logo__email">contact@forstudy.space</a>
+          </div>
+        </div>
+        <div class="footer-section__adress-logo__minitext">
+          <span>© 2021 HLEGAL Law company, LLC</span>
+        </div>
+      </div>
+    </footer>
+  </section>
 </body>
+
 </html>
